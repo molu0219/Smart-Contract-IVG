@@ -10,13 +10,10 @@ Max mint per txn: 5
 Max token per wallet: 5
 
 ## NFT development Progress
-```flow
-Deploy_Contract=>operation: Deploy Smart Contract
-Upload_IPFS=>operation: Upload IPFS
-Update_IPFS=>operation: Update IPFS
-Update_OS=>operation: Update Opensea
-Deploy_Contract->Upload_IPFS->Update_IPFS->Update_OS
 
+```mermaid
+graph TD;
+
+deploy_smart_contract-->upload_file_to_IPFS-->update_IPFS-->update_opensea
 ```
-
 
